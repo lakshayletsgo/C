@@ -1,6 +1,7 @@
 //size of datatypes using size of function
 #include<stdio.h>
 #include<limits.h>
+#include<float.h>
 int main(){
     
     printf("Size of INT is %ld bytes\n", sizeof(int));
@@ -14,7 +15,10 @@ int main(){
     printf("min range of short is %d\n",SHRT_MIN);
     printf("max range of short is %d\n",SHRT_MAX);
     printf("min range of char is %d\n",CHAR_MIN);
-    printf("max range of char is %d",CHAR_MAX);
+    printf("max range of char is %d\n",CHAR_MAX);
+    printf("min range of float is %e\n",FLT_MIN);
+    printf("max range of float is %e\n",FLT_MAX);
+
 
     return 0;
 }
