@@ -1,4 +1,4 @@
-//Nested loops (inner loop it starts fresh when we come from outer loop)
+//Nested loops (inner loop it starts fresh when we come from outer loop) Part 1
 #include <stdio.h>
 int main()
 {
