@@ -11,3 +11,10 @@ int main(){
     printf("Value of x using pointer is %d\n",*p);
 }
 
+
+
+
+// 10
+// 0061FF18
+// Value of x using pointer p is 10
+// Value of x using pointer is 15
