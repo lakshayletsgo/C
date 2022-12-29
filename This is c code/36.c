@@ -1,10 +1,7 @@
 //Finding sum of natural numbers using recursive functions
 #include <stdio.h>
-
 int addNumbers(int n);
-
 int main() {
-
   int num;
   printf("Enter a positive integer: ");
   scanf("%d", &num);
