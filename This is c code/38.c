@@ -1,28 +1,22 @@
+//Double Pointers
 #include <stdio.h>
 
-long long convert(int x);
+int main()
+{
+    int a;
+    int *p1;
+    int **p2;
+    p1 = &a;
+    p2 = &p1;
+    a = 100;
+    printf("\nValue of a (using p1): %d", *p1);
+    printf("\nValue of a (using p2): %d", **p2);
 
-// It's the driver function
-int main() {
-    int x;
+    *p1 = 200;
+    printf("\nValue of a: %d", *p1);
 
-    printf("-----Enter a decimal number to convert-----\n");
-    scanf("%d", &x);
+    **p2 = 200;
+    printf("\nValue of a: %d", **p2);
 
-    printf("\nThe Decimal: %d => Binary: %lld\n", x, convert(x));
     return 0;
-}
-
-// This function will convert number decimal to binary
-long long convert(int x) {
-    long long bin = 0;
-    int rem, i = 1;
-
-    while (x != 0) {
-        rem = x % 2;
-        x /= 2;
-        bin += rem * i;
-        i *= 10;
-    }
-    return bin;
 }
